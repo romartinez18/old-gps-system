@@ -1,0 +1,14 @@
+"cedula"=>$usuEdit->cedula, "nombres"=>$usuEdit->nombres, "apellidos"=>$usuEdit->apellidos, "foto"=>$usuEdit->foto, "tipo"=>$usuEdit->tipo, "distribuidor"=>$usuEdit->distribuidor, "cantidadusuario"=>$usuEdit->cantidadusuario, "ciudad"=>$usuEdit->ciudad, "estado"=>$usuEdit->estado, "direccion"=>$usuEdit->direccion, "email"=>$usuEdit->email, "celular"=>$usuEdit->celular, "celular2"=>$usuEdit->celular2, "celular3"=>$usuEdit->celular3, "telefono"=>$usuEdit->telefono, "nivelautorizacion"=>$usuEdit->nivelautorizacion, "activo"=>$usuEdit->activo, "usuario"=>$loginEdit->usuario
+
+
+
+
+verificar campos dataForm
+
+
+id, cedula, nombres, apellidos, foto, tipo, distribuidor, cantidadusuario, ciudad, estado, direccion, email, celular, celular2, celular3, telefono, nivelautorizacion, activo, fecharegistro
+
+
+
+
+id, usuario, clave, codigo

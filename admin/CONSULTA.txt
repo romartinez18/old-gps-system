@@ -1,0 +1,8 @@
+descripcion, foto     vehiculos
+serial, celular1  gps
+
+from vehiculos_user  when idusuario get idvehiculo
+
+
+
+select vehiculos.descripcion as descripcion, vehiculos.activo as activo, vehiculos.foto as foto, gps.serial as serial, gps.celular1 as celular from vehiculos, gps, vehiculos_user where ((vehiculos_user.idusuario = 1 AND gps.activo = 1) AND (vehiculos_user.idvehiculo = vehiculos.id))

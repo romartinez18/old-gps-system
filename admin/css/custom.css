@@ -1,0 +1,154 @@
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 4px;
+}
+
+#preview{
+	  position:absolute;
+	  border:1px solid #ccc;
+	  background:#333;
+	  padding:5px;
+	  display:none;
+	  color:#fff;
+} 
+	
+[data-tooltip]{ 
+position:relative; 
+border-bottom: 1px dotted #09C;
+cursor:pointer;
+}
+[data-tooltip]::before {
+content : attr(data-tooltip);
+background-color:rgba(0,0,0,.75);
+color:white;
+-webkit-font-smoothing: antialiased;
+width:250px;
+padding:10px;
+height:auto;
+border-radius:3px;
+display:none;
+position:absolute;
+bottom:25px;
+left:calc(100% - 75%);
+pointer-events: none;
+z-index:99;
+text-align: center;
+width:auto;
+min-width:50px;
+max-width:500px;
+}
+
+[data-tooltip]::after{
+content:"";
+height:1px;
+width:1px;
+border:10px solid transparent;
+border-top-color:rgba(0,0,0,.75);
+position:absolute;
+bottom:4px;
+left:50%;
+display: none;
+}
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after
+{ display:block;}
+
+.animado [data-tooltip]::before {
+display:block;
+/* IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+/* IE 5-7 */
+filter: alpha(opacity=0);
+
+/* Netscape */
+-moz-opacity: 0;
+
+/* Safari 1.x */
+-khtml-opacity: 0;
+
+/* Good browsers */
+opacity: 0;
+pointer-events: none;
+}
+.animado [data-tooltip]::after{
+/* IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+/* IE 5-7 */
+filter: alpha(opacity=0);
+
+/* Netscape */
+-moz-opacity: 0;
+
+/* Safari 1.x */
+-khtml-opacity: 0;
+
+/* Good browsers */
+opacity: 0;
+pointer-events: none;
+}
+
+/* define la animación */ 
+.animado [data-tooltip]:hover::before,
+.animado [data-tooltip]:hover::after {
+    animation-name: toolTip;
+    animation-duration: 1s;
+}
+/* define las fotogramas de la animación*/
+@keyframes toolTip {
+
+  0%   {
+    /* IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+/* IE 5-7 */
+filter: alpha(opacity=0);
+
+/* Netscape */
+-moz-opacity: 0;
+
+/* Safari 1.x */
+-khtml-opacity: 0;
+
+/* Good browsers */
+opacity: 0;
+  }
+  
+  100% {
+  /* IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+
+/* IE 5-7 */
+filter: alpha(opacity=1);
+
+/* Netscape */
+-moz-opacity: 1;
+
+/* Safari 1.x */
+-khtml-opacity: 1;
+
+/* Good browsers */
+opacity: 1;
+  }
+}
+
+.animado [data-tooltip]:hover::before,
+.animado [data-tooltip]:hover::after
+{
+  /* IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+
+/* IE 5-7 */
+filter: alpha(opacity=1);
+
+/* Netscape */
+-moz-opacity: 1;
+
+/* Safari 1.x */
+-khtml-opacity: 1;
+
+/* Good browsers */
+opacity: 1;
+} 
+
+  
